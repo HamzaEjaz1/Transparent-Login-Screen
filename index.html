@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Screen</title>
+</head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+text-decoration: none;
+    }
+
+
+
+    .bg-gradient {
+       min-height: 81vh;
+        max-width: 100%;
+        background: linear-gradient(45deg, rgb(66, 188, 245), rgb(245, 66, 191));
+        padding: 66px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .login {
+        padding-top: 30px;
+        width: 25%;
+        margin: auto;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.295);
+        border-radius: 20px;
+        /* margin-top: 50px; */
+    }
+
+    .textCenter {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 8px 20px;
+        margin: 20px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+    input[type=text]:hover {
+        background-color: white;
+    }
+
+    .main-content {
+        width: 80%;
+        margin-top: 80px;
+        margin: auto;
+        height: 100%;
+    }
+
+    .mt3 {
+        margin-top: 30px;
+    }
+.textCenterp{
+    text-align: center;
+    font-size: 10px;
+}
+    /* Button Css */
+
+    .button {
+        position: relative;
+        background: linear-gradient(45deg, rgb(66, 188, 245), rgb(245, 66, 191));
+        border: none;
+        border-radius: 15px;
+        /* font-size: px; */
+        color: #FFFFFF;
+        padding: 8px 20px;
+        width: 100%;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="bg-gradient ">
+
+        <div class="login ">
+            <div class="main-content">
+                <h3 class="textCenter mt3">Login</h3>
+
+
+
+                <div class="mt3"> <label for="UserName" class="mt5"><i class="fa fa-user"></i> username</label>
+                    <input type="text" placeholder=" Type your username ">
+                    <label for="Password"><i class="fa fa-lock"></i> password</label>
+                    <input type="text" placeholder="Type your Password">
+                    <p style="float: right;"><a href="#">forget password ?</a></p>
+                    <a href="./Admin page/index.html"><button class="button mt3" >LOGIN</button></a>
+                    <p class="textCenterp mt3">or SignUp using</p>
+                    <p class="textCenterp"><a href="">SIGNUP</a></p>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
